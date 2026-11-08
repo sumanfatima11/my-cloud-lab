@@ -1,33 +1,11 @@
-name: My First Deployment
-
-on:
-  push:
-    branches:
-      - main
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Get my code
-        uses: actions/checkout@v4
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload Website
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-
-      - name: Deploy Website
-        id: deployment
-        uses: actions/deploy-pages@v4
+<!DOCTYPE html>
+<html>
+<head>
+<title>My First Cloud Website</title>
+</head>
+<body>
+<h1>Hello Cloud!</h1>
+<h2>My First Automated Deployment</h2>
+<p>Website deployed using GitHub Actions.</p>
+</body>
+</html>
