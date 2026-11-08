@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My First Cloud Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Cloud Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            color: #4f46e5;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #1f2937;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #6b7280;
+            font-size: 14px;
+            background: #f3f4f6;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-<h1>Hello Pakistan!</h1>
-<h2>My First Automated Deployment</h2>
-<p>Website deployed using GitHub Actions.</p>
+    <div class="card">
+        <h1>Hello Cloud!</h1>
+        <h2>My First Automated Deployment</h2>
+        <p>Website successfully deployed using GitHub Actions.</p>
+    </div>
 </body>
 </html>
